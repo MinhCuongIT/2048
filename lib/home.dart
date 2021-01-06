@@ -197,6 +197,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Color(MyColor.gridBackground),
       ),
       body: SingleChildScrollView(
+        physics: NeverScrollableScrollPhysics(),
         child: Padding(
         padding: EdgeInsets.all(20.0),
         child: Column(
@@ -244,6 +245,7 @@ class _HomePageState extends State<HomePage> {
                     padding: EdgeInsets.all(10.0),
                     child: GestureDetector(
                       child: GridView.count(
+                        physics: NeverScrollableScrollPhysics(),
                         primary: false,
                         crossAxisSpacing: 10.0,
                         mainAxisSpacing: 10.0,
